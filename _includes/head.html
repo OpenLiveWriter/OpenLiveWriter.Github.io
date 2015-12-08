@@ -6,7 +6,7 @@
 {% endif %}
 <head>
 	<meta charset="utf-8">
-	<title>{% if page.title %}{{ page.title }} - {% elsif post.title %}{{ post.title }} - {% endif %}{{ site.title }}</title>
+	<title>{{ page.title }}</title>
 	{% capture description %}
 		{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
 	{% endcapture %}
