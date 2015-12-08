@@ -1,3 +1,12 @@
+# Site Settings
+#
+url: http://www.openlivewriter.com
+title: Open Live Writer
+subtitle: Turning blogging up to 11 since 2007
+
+# Google Analytics
+google_analytics_tracking_id: UA-57261022-2
+
 #
 # Jekyll Settings
 #

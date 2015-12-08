@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+{% if site.lang %}
+<html lang="{{ site.lang }}">
+{% else %}
+<html>
+{% endif %}
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{ page.title }} - {% elsif post.title %}{{ post.title }} - {% endif %}{{ site.title }}</title>
+	{% capture description %}
+		{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
+	{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+</head>	
