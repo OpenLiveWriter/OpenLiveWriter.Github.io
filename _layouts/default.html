@@ -1,0 +1,22 @@
+{% include head.html %}
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
+          <h1 id="project_title"><img src="\images\openlivewriter-purpleheader.png" alt="Open Live Writer"></img></h1>
+          {% if site.subtitle %}
+    	    <h2 id="project_tagline">{{ site.subtitle }}</h2>
+          {% endif %}
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+    <div id="main_content" class="inner">{{ content }}</div>
+    </div>
+	<div id="footer" class="inner">{% include footer.html %}</div>
+	{% include google_analytics.html %}
+  </body>
+</html>
