@@ -1,0 +1,8 @@
+#
+# Jekyll Settings
+#
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  
