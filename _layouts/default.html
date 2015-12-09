@@ -20,7 +20,9 @@
     <div id="main_content_wrap" class="outer">
       <div id="main_content" class="inner">{{ content }}</div>
     </div>
-    <footer id="footer" class="inner">{% include footer.html %}</footer>
+    <div id="footer_wrap" class="outer">
+      <footer id="footer" class="inner">{% include footer.html %}</footer>
+    </div>
     {% include google_analytics.html %}
   </body>
 </html>
