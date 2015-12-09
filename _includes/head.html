@@ -5,15 +5,11 @@
 <html>
 {% endif %}
 <head>
-	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-	{% capture description %}
-		{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
-	{% endcapture %}
-	<meta name="description" content="{{ description }}">
-	{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
-	<meta name="HandheldFriendly" content="True">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/favicon.ico" rel="shortcut icon">
-	<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  <link href="/favicon.ico" rel="shortcut icon">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/downloadbutton.css">
 </head>	
