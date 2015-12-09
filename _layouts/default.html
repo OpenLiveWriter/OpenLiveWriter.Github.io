@@ -12,6 +12,10 @@
         </header>
     </div>
 
+{% if page.download == true %}
+{% include download.html %}
+{% endif %}    
+
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <div id="main_content" class="inner">{{ content }}</div>
