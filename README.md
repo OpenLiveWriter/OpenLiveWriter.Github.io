@@ -1,8 +1,7 @@
 # OpenLiveWriter.org Website
-The website for http://openlivewriter.org is hosted on GitHub pages and the source
-for it is in the repository. Note that issues should only be logged against the
-website itself - for Open Live Writer application issues or enhancements see
-the OpenLiveWriter repo.
+The website for http://openlivewriter.org is hosted on GitHub pages using the source in this repository.
+Note that issues should only be logged against the website itself - for Open Live Writer application issues or enhancements see
+the [OpenLiveWriter repo](https://github.com/OpenLiveWriter/OpenLiveWriter/issues/).
 
 ### License
 Open Live Writer proudly uses the [MIT License](license.txt).
@@ -10,7 +9,7 @@ Open Live Writer proudly uses the [MIT License](license.txt).
 ### Roadmap
 You can find the roadmap for the Open Live Writer product [here](https://github.com/OpenLiveWriter/OpenLiveWriter/blob/master/roadmap.md).
 
-For the website, we are initially focussed on getting a fast, lightweight product homepage set up. Then we want to increate the end
+For the website, we are initially focussed on getting a fast, lightweight product homepage set up. Then we want to increase the end
 user help content to assist people using Open Live Writer. [Developer documentation should live alongside the code](https://github.com/OpenLiveWriter/OpenLiveWriter/).
 
 ### Contributing
@@ -25,9 +24,7 @@ To contribute to the website simply:
 If you haven't already, please sign the [.NET Foundation CLA](http://cla2.dotnetfoundation.org) to give us 
 permission to include your code in the next release of Open Live Writer.
 
-This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/)
-to clarify expected behavior in our community. This code of conduct has been 
-[adopted by many other projects](http://contributor-covenant.org/adopters/).
+This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/) to clarify expected behavior in our community.
 For more information see the [.NET Foundation Code of Conduct](http://www.dotnetfoundation.org/code-of-conduct).
 
 For developer chatter, head on over to the [OpenLiveWriter Gitter room]((https://gitter.im/OpenLiveWriter/OpenLiveWriter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)):
@@ -35,3 +32,4 @@ For developer chatter, head on over to the [OpenLiveWriter Gitter room]((https:/
 
 ### .NET Foundation
 The Open Live Writer project is supported by the [.NET Foundation](http://www.dotnetfoundation.org).
+
