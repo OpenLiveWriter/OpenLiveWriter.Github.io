@@ -357,8 +357,24 @@ Full-Width Styles
   background: #212121;
 }
 
+article {
+  padding: 40px 0 30px;
+}
 
+article h2 {
+  padding-bottom: 0px;
+}
 
+.post-meta {
+  padding: 5px 0;
+  font-weight: 600;
+}
+
+.avatar {
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
