@@ -2,7 +2,7 @@
 layout: default
 title: 'Blogger V3 API Support'
 version: 0.5.1.2
-categories: [release]
+categories: [release, news]
 date: 2015-12-17 00:00:00 -0800
 author: martinwoodward
 download: true

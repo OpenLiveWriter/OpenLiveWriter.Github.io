@@ -1,3 +1,12 @@
+---
+layout: default
+title: 'Contributing to Open Live Writer'
+categories: [blog]
+date: 2016-01-16 00:00:00 -0800
+author: kathweaver
+download: true
+---
+
 ###Contributing to Open Live Writer
 I have been using the original Live Writer since it came out, and loved it.  I was 
 an avid user of the plug-ins too.
