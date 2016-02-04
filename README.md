@@ -30,6 +30,29 @@ For more information see the [.NET Foundation Code of Conduct](http://www.dotnet
 For developer chatter, head on over to the [OpenLiveWriter Gitter room]((https://gitter.im/OpenLiveWriter/OpenLiveWriter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)):
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OpenLiveWriter/OpenLiveWriter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+### For the people writing posts and news items:
+
+All the files within **`_posts`** should have this section at the top of the file.
+
+```
+---
+layout: default
+title: 'Initial public release'
+version: 0.5.0.0
+categories: [release, news]
+date: 2015-12-09 00:00:00 -0800
+author: martinwoodward
+download: true
+---
+```
+Do not change the `layout`.  
+`title`: The text that you want to see on the page.  
+`version`: The version number of OLW about which the post is concerned.  
+`categories`: Comma separated categories within braces. If this contains `blog` it goes to `/blog`, if it contains `news` it goes to `/news`. If both, then it will be present in both places.  
+`date`: yyyy-mm-dd hh:mm:ss timezone (timezone is of the form +0530 or -0800, ie. +/-hhmm).  
+`author` is the GitHub username of the author. Used to link to their profile and show a small gravatar.  
+`download`: I'm not sure what this does but let it be.
+
 ### .NET Foundation
 The Open Live Writer project is supported by the [.NET Foundation](http://www.dotnetfoundation.org).
 
