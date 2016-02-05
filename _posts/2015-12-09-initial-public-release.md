@@ -2,7 +2,7 @@
 layout: default
 title: 'Initial public release'
 version: 0.5.0.0
-categories: [release]
+categories: [release, news]
 date: 2015-12-09 00:00:00 -0800
 author: martinwoodward
 download: true

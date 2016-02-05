@@ -1,2 +1,3 @@
 # ignore jekyll output
 _site
+.vscode

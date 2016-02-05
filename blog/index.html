@@ -1,0 +1,12 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+download: true
+---
+
+{% for post in site.posts %}
+  {% if post.categories contains 'blog' %}
+    {% include news_item.html %}
+  {% endif %}
+{% endfor %}
