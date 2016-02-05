@@ -7,7 +7,6 @@ author: kathweaver
 download: true
 ---
 
-###Contributing to Open Live Writer
 I have been using the original Live Writer since it came out, and loved it.  I was 
 an avid user of the plug-ins too.
 
