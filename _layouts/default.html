@@ -3,40 +3,6 @@
   <body>
     {% include google_analytics.html %}
     <!-- HEADER -->
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <img class="navbar-brand header-img" href="http://openlivewriter.org" src="/favicon.ico">
-          <style>
-            .navbar-brand {
-              padding: 0;
-            }
-            
-            .header-img {
-              margin: 0;
-            }
-          </style>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/tutorials">Tutorials</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
@@ -46,7 +12,50 @@
           {% endif %}
         </header>
     </div>
+    <!-- Tabbed Navigation -->
+    <ul class="nav nav-tabs">
+      <li id="brand-image"><img class="navbar-brand header-img" href="/index.html" src="/favicon.ico" /></li>
+      <li id="index.html" class="active" role="presentation"><a href="/index.html">Home</a></li>
+      <li id="news" role="presentation"><a href="/news">News</a></li>
+      <li id="blog" role="presentation"><a href="/blog">Blog</a></li>
+      <li id="tutorials" role="presentation"><a href="/tutorials">Tutorials</a></li>
+    </ul>
+    <style>
+      .navbar-brand {
+        padding: 0;
+      }
 
+      .header-img {
+        margin: 0;
+        margin-right: 5px;
+        margin-left: 5px;
+        height: 40px;
+      }
+
+      .nav-tabs {
+        background-color: #7E4999;
+      }
+
+      .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+        color: #7E4999;
+        background-color: #fff;
+        /* border: 1px solid #ddd; */
+        border-bottom-color: transparent;
+      }
+
+      .nav-tabs > li > a:hover {
+        background-color: #ddd;
+        color: #7E4999
+      }
+
+      .nav-tabs > li > a {
+        margin-right: 0;
+        border-radius: 0 0 0 0;
+        color: #fff;
+        /* border: 1px solid transparent; */
+      }
+
+    </style>
 {% if page.download == true %}
 {% include download.html %}
 {% endif %}    
@@ -58,8 +67,25 @@
     <div id="footer_wrap" class="outer">
       <footer id="footer" class="inner">{% include footer.html %}</footer>
     </div>
-    <style>
-      body { padding-top: 50px; }
-    </style>
+    <script>
+      $(document).ready ( function() {
+        var current_href = window.location.href;
+        var re = /\/\w+\//ig;
+        var m;
+        while ((m = re.exec(current_href)) !== null) {
+            if (m.index === re.lastIndex) {
+                re.lastIndex++;
+            }
+          var current_tab = m[0];
+          $(".nav li").each(function() {
+            if (current_tab.indexOf(this.id) > -1) {
+              $(this).addClass("active");
+            } else {
+              $(this).removeClass("active");
+            }
+          })
+        }
+      })
+    </script>
   </body>
 </html>
