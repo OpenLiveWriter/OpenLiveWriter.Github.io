@@ -261,7 +261,6 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 640px;
-  padding: 20px 10px;
   margin: 0 auto;
 }
 
@@ -285,7 +284,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 20px 0px 0px 0px;
 }
 
 #project_title {
@@ -345,16 +344,19 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
 
 #main_content {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #footer_wrap {
   background: #212121;
+  position: static;
+  bottom: 0px;
+  height: 80px;
 }
 
 article {
@@ -382,6 +384,10 @@ Small Device Styles
 @media screen and (max-width: 480px) {
   body {
     font-size:14px;
+  }
+
+  #header_wrap .inner img {
+    max-width: 480px;
   }
 
   #downloads {
