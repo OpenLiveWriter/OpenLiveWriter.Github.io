@@ -3,8 +3,22 @@
   <body>
     {% include google_analytics.html %}
     <!-- HEADER -->
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
+          <h1 id="project_title"><a href="/"><img src="/images/openlivewriter-purpleheader.png" alt="Open Live Writer"/></a></h1>
+          {% if page.subtitle %}
+    	    <h2 id="project_tagline">{{ page.subtitle }}</h2>
+          {% endif %}
+        </header>
+    </div>
+
+{% if page.download == true %}
+{% include download.html %}
+{% endif %}    
+<!-- NAVBAR -->
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -37,20 +51,6 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
-          <h1 id="project_title"><a href="/"><img src="/images/openlivewriter-purpleheader.png" alt="Open Live Writer"/></a></h1>
-          {% if page.subtitle %}
-    	    <h2 id="project_tagline">{{ page.subtitle }}</h2>
-          {% endif %}
-        </header>
-    </div>
-
-{% if page.download == true %}
-{% include download.html %}
-{% endif %}    
-
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <div id="main_content" class="inner">{{ content }}</div>
