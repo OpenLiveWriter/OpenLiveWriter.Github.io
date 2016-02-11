@@ -59,7 +59,12 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <div id="main_content" class="inner">{{ content }}</div>
+      <div id="main_content" class="inner">
+        {% if page.categories contains 'news' or page.categories contains 'blog' %}
+          <h1 id="post-heading"><a href="{{ page.url }}">{{ page.title }}</a></h1><br/>
+        {% endif %}
+        {{ content }}
+      </div>
     </div>
     <div id="footer_wrap" class="outer">
       <footer id="footer" class="inner">{% include footer.html %}</footer>
