@@ -71,7 +71,7 @@
     <script>
       $(document).ready ( function() {
         var current_href = window.location.href;
-        var re = /\/\w+\//ig;
+        var re = /\/\w+\//i;
         var m;
         while ((m = re.exec(current_href)) !== null) {
             if (m.index === re.lastIndex) {
@@ -85,6 +85,7 @@
               $(this).removeClass("active");
             }
           })
+          break;
         }
       })
     </script>
