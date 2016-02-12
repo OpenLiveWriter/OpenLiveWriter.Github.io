@@ -9,6 +9,11 @@ by Jason Costello, @jsncostello
 MeyerWeb Reset
 *******************************************************************************/
 
+html {
+  position:relative; 
+  min-height: 100%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -324,7 +329,6 @@ Full-Width Styles
 .tar-download-link {
   position: absolute;
   left: 120px;
-  bottom: -45px;
   display: block;
   width: 90px;
   height:70px;
@@ -353,7 +357,7 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
-  position: static;
+  position: absolute;
   bottom: 0px;
   height: 100px;
 }
@@ -376,6 +380,11 @@ article h2 {
   display: inline-block;
   vertical-align: middle;
 }
+
+.main-container {
+    margin-bottom:100px;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/

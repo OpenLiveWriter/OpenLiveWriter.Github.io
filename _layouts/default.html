@@ -1,30 +1,32 @@
 {% include head.html %}
 <body>
-{% include google_analytics.html %}
-<!-- OLW banner and GitHub badge -->
-<div id="header_wrap" class="outer">
-    <header class="inner">
-        <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
-        <h1 id="project_title"><a href="/"><img src="/images/openlivewriter-purpleheader.png" alt="Open Live Writer"/></a></h1>
-        {% if page.subtitle %}
-        <h2 id="project_tagline">{{ page.subtitle }}</h2>
-        {% endif %}
-    </header>
-</div>
-<!-- Tabbed navigation bar -->
-<ul class="nav nav-tabs">
-    <li id="home" class="active" role="presentation"><a href="/">Home</a></li>
-    <li id="news" role="presentation"><a href="/news">News</a></li>
-    <li id="blog" role="presentation"><a href="/blog">Blog</a></li>
-    <li id="tutorials" role="presentation"><a href="/tutorials">Tutorials</a></li>
-</ul>
-<!-- INCLUDE DOWNLOAD BUTTON IF THE PAGE HAS IT SET IN THE FRONT-MATTER -->
-{% if page.download == true %}
-{% include download.html %}
-{% endif %}
-<!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer">
-    <div id="main_content" class="inner">{{ content }}</div>
+<div class="main-container">
+    {% include google_analytics.html %}
+    <!-- OLW banner and GitHub badge -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+            <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
+            <h1 id="project_title"><a href="/"><img src="/images/openlivewriter-purpleheader.png" alt="Open Live Writer"/></a></h1>
+            {% if page.subtitle %}
+            <h2 id="project_tagline">{{ page.subtitle }}</h2>
+            {% endif %}
+        </header>
+    </div>
+    <!-- Tabbed navigation bar -->
+    <ul class="nav nav-tabs">
+        <li id="home" class="active" role="presentation"><a href="/">Home</a></li>
+        <li id="news" role="presentation"><a href="/news">News</a></li>
+        <li id="blog" role="presentation"><a href="/blog">Blog</a></li>
+        <li id="tutorials" role="presentation"><a href="/tutorials">Tutorials</a></li>
+    </ul>
+    <!-- INCLUDE DOWNLOAD BUTTON IF THE PAGE HAS IT SET IN THE FRONT-MATTER -->
+    {% if page.download == true %}
+    {% include download.html %}
+    {% endif %}
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <div id="main_content" class="inner">{{ content }}</div>
+    </div>
 </div>
 <!-- FOOTER -->
 <div id="footer_wrap" class="outer">
