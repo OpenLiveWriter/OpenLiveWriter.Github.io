@@ -142,9 +142,9 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 739px;
+  max-height: 400px;
   padding: 5px;
   margin: 10px 0 10px 0;
-
 }
 
 p img {
