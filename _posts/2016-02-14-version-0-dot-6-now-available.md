@@ -14,9 +14,12 @@ The next time you start Open Live Writer and are connected to the internet, it s
 
 ## Release Notes
 
-For spell checking to work you'll need to have Windows 8 or newer installed (Windows 7 does not have spell checking support) and you’ll need to install your preferred input language in Windows to enable spell checking in that language. Only one language can be spell checked in Open Live Writer at a time, but you can change the language at any time by going to **File > Options > Spelling** and choosing a new dictionary language.
+For spell checking to work you'll need to have Windows 8 or newer installed (Windows 7 does not have spell checking support) and you’ll need to install your preferred input language in [Windows 8 and 8.1][1] or [Windows 10][2] to enable spell checking in that language. Only one language can be spell checked in Open Live Writer at a time, but you can change the language at any time by going to **File > Options > Spelling** and choosing a new dictionary language.
 
 Google Blogger categories will automatically populate for easy tagging of your blog posts. In addition to categories, there are several other Google Blogger bug fixes in this release. The most notable issues were time zone differences causing scheduled posts to be scheduled at the incorrect time, failing to open drafts that were posted to Blogger, and failing to download and open posts from Blogger that are older than your most recent 500 posts.
+
+[1]:http://windows.microsoft.com/en-us/windows-8/add-language-keyboard
+[2]:http://windows.microsoft.com/en-us/windows-10/how-to-add-an-input-language-to-your-pc
 
 ### Bug fixes
 
@@ -41,16 +44,24 @@ Google Blogger categories will automatically populate for easy tagging of your b
 
 ### Special thanks to our contributors for this release:
 
-<img src="https://github.com/willduff.png" class="avatar" alt="willduff avatar" width="40" height="40">  [@willduff](https://github.com/willduff)
+<img src="https://github.com/willduff.png" class="avatar" alt="willduff avatar" width="30" height="30">  [@willduff](https://github.com/willduff)
 
-<img src="https://github.com/martinwoodward.png" class="avatar" alt="martinwoodward avatar" width="40" height="40">  [@martinwoodward](https://github.com/martinwoodward)
+<img src="https://github.com/ScottIsAFool.png" class="avatar" alt="ScottIsAFool avatar" width="30" height="30">  [@ScottIsAFool](https://github.com/ScottIsAFool)
 
-<img src="https://github.com/bbowyersmyth.png" class="avatar" alt="bbowyersmyth avatar" width="40" height="40">  [@bbowyersmyth](https://github.com/bbowyersmyth)
+<img src="https://github.com/martinwoodward.png" class="avatar" alt="martinwoodward avatar" width="30" height="30">  [@martinwoodward](https://github.com/martinwoodward)
 
-<img src="https://github.com/kathweaver.png" class="avatar" alt="kathweaver avatar" width="40" height="40">  [@kathweaver](https://github.com/kathweaver)
+<img src="https://github.com/timheuer.png" class="avatar" alt="timheuer avatar" width="30" height="30">  [@timheuer](https://github.com/timheuer)
 
-<img src="https://github.com/jannavarro.png" class="avatar" alt="jannavarro avatar" width="40" height="40">  [@jannavarro](https://github.com/jannavarro)
+<img src="https://github.com/hmemcpy.png" class="avatar" alt="hmemcpy avatar" width="30" height="30">  [@hmemcpy](https://github.com/hmemcpy)
 
-<img src="https://github.com/hashhar.png" class="avatar" alt="hashhar avatar" width="40" height="40">  [@hashhar](https://github.com/hashhar)
+<img src="https://github.com/bbowyersmyth.png" class="avatar" alt="bbowyersmyth avatar" width="30" height="30">  [@bbowyersmyth](https://github.com/bbowyersmyth)
 
-<img src="https://github.com/jmbucknall.png" class="avatar" alt="jmbucknall avatar" width="40" height="40">  [@jmbucknall](https://github.com/jmbucknall)
+<img src="https://github.com/kathweaver.png" class="avatar" alt="kathweaver avatar" width="30" height="30">  [@kathweaver](https://github.com/kathweaver)
+
+<img src="https://github.com/jannavarro.png" class="avatar" alt="jannavarro avatar" width="30" height="30">  [@jannavarro](https://github.com/jannavarro)
+
+<img src="https://github.com/hashhar.png" class="avatar" alt="hashhar avatar" width="30" height="30">  [@hashhar](https://github.com/hashhar)
+
+<img src="https://github.com/jmbucknall.png" class="avatar" alt="jmbucknall avatar" width="30" height="30">  [@jmbucknall](https://github.com/jmbucknall)
+
+<img src="https://github.com/demortes.png" class="avatar" alt="demortes avatar" width="30" height="30">  [@demortes](https://github.com/demortes)
