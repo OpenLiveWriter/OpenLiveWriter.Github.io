@@ -4,6 +4,9 @@ url: http://www.openlivewriter.com
 title: Open Live Writer
 subtitle: Turning blogging up to 11 since 2007
 
+# RSS Feed config
+description: Open Live Writer is like Word for your blog.
+
 # Google Analytics
 google_analytics_tracking_id: UA-57261022-2
 
@@ -14,4 +17,4 @@ google_analytics_tracking_id: UA-57261022-2
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-  
+  - jekyll-feed
