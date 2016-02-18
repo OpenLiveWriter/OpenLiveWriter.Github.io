@@ -1,0 +1,17 @@
+---
+layout: default
+title: Registry Keys
+download: false
+---
+
+<p>Open Live Writer uses several registry keys.  For a complete uninstall, you should delete them.
+    They are located at HKEY_CURRENT_USER\SOFTWARE\OpenLiveWriter\ 
+</p>
+<p>There are several keys of special interest:</p>
+</br>
+<P>HKEY_CURRENT_USER\SOFTWARE\OpenLiveWriter\Updates</br>
+For automatically loading the nightly builds - use this carefully as we may be unsuccessfully testing a new feature, create a dword key for CheckForBetaUpdates 1 = beta, 0 = regular</P>
+You can turn off automatic updates by turning off AutoUpdate, change the DWord key to 0</p>
+<br>
+<p>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows Live\Writer\Weblogs </br>
+    Stores the location and information for your weblogs.  Many users have copied the entries from LiveWriter rather then reenter them.</p>
