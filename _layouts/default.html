@@ -1,95 +1,92 @@
 {% include head.html %}
-
-  <body>
+<body>
+<div class="main-container">
     {% include google_analytics.html %}
-    <!-- HEADER -->
+    <!-- OLW banner and GitHub badge -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
-          <h1 id="project_title"><a href="/"><img src="/images/openlivewriter-purpleheader.png" alt="Open Live Writer"/></a></h1>
-          {% if page.subtitle %}
-          <h2 id="project_tagline" style="margin-bottom: 0px">{{ page.subtitle }}</h2>
-          {% endif %}
+            <a id="forkme_banner" href="https://github.com/OpenLiveWriter">View on GitHub</a>
+            <h1 id="project_title"><a href="/"><img src="/images/openlivewriter-purpleheader.png" alt="Open Live Writer"/></a></h1>
+            {% if page.subtitle %}
+            <h2 id="project_tagline">{{ page.subtitle }}</h2>
+            {% endif %}
         </header>
     </div>
-    <!-- Tabbed Navigation -->
+    <!-- Tabbed navigation bar -->
     <ul class="nav nav-tabs">
-      <li id="index.html" class="active" role="presentation"><a href="/index.html">Home</a></li>
-      <li id="news" role="presentation"><a href="/news">News</a></li>
-      <li id="blog" role="presentation"><a href="/blog">Blog</a></li>
-      <li id="GSoC" role="presentation"><a href="/GSoC">GSoC</a></li>
-      <li id="tutorials" role="presentation"><a href="/tutorials">Tutorials</a></li>
+        <li id="home" class="active" role="presentation"><a href="/">Home</a></li>
+        <li id="news" role="presentation"><a href="/news">News</a></li>
+        <li id="blog" role="presentation"><a href="/blog">Blog</a></li>
+        <li id="tutorials" role="presentation"><a href="/tutorials">Tutorials</a></li>
     </ul>
-    <style>
-
-      .header-img {
-        margin: 0;
-        margin-right: 5px;
-        margin-left: 5px;
-        height: 40px;
-      }
-
-      .nav-tabs {
-        background-color: #7E4999;
-      }
-
-      .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
-        color: #7E4999;
-        background-color: #fff;
-        /* border: 1px solid #ddd; */
-        border-bottom-color: transparent;
-      }
-
-      .nav-tabs > li > a:hover {
-        background-color: #ddd;
-        color: #7E4999
-      }
-
-      .nav-tabs > li > a {
-        margin-right: 0;
-        border-radius: 0 0 0 0;
-        color: #fff;
-        /* border: 1px solid transparent; */
-      }
-
-    </style>
-
+    <!-- INCLUDE DOWNLOAD BUTTON IF THE PAGE HAS IT SET IN THE FRONT-MATTER -->
     {% if page.download == true %}
-      {% include download.html %}
+    {% include download.html %}
     {% endif %}
-
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <div id="main_content" class="inner">
-        {% if page.categories contains 'news' or page.categories contains 'blog' %}
-          <h1 id="post-heading"><a href="{{ page.url }}">{{ page.title }}</a></h1><br/>
-        {% endif %}
-        {{ content }}
-      </div>
+        <div id="main_content" class="inner">
+            {{ content }}
+        </div>
     </div>
-    <div id="footer_wrap" class="outer">
-      <footer id="footer" class="inner">{% include footer.html %}</footer>
-    </div>
-    <script>
-      $(document).ready ( function() {
+</div>
+<!-- FOOTER -->
+<div id="footer_wrap" class="outer">
+    <footer id="footer" class="inner">
+        {% include footer.html %}
+        <!-- DOWNLOAD SOURCE IN THE FOOTER -->
+        {% include download_source.html %}
+    </footer>
+</div>
+<!-- SCRIPTS AND STYLES -->
+<script>
+    // This function manages which navigation tab is currently active
+    $(document).ready(function() {
         var current_href = window.location.href;
+        // Filters out the leading folder from the url
         var re = /\/\w+\//i;
         var m;
         while ((m = re.exec(current_href)) !== null) {
             if (m.index === re.lastIndex) {
                 re.lastIndex++;
             }
-          var current_tab = m[0];
-          $(".nav li").each(function() {
-            if (current_tab.indexOf(this.id) > -1) {
-              $(this).addClass("active");
-            } else {
-              $(this).removeClass("active");
-            }
-          })
-          break;
-        }
-      })
-    </script>
-  </body>
+            var current_tab = m[0];
+            // Iterate over all navigation tabs and update the active tab
+            $(".nav li").each(function() {
+                if (current_tab.indexOf(this.id) > -1) {
+                    $(this).addClass("active");
+                } else {
+                    $(this).removeClass("active");
+                }
+            })
+            break;
+        };
+    })
+</script>
+<style>
+    /* Make the navigation tab bar have a purple background */
+    .nav-tabs {
+        background-color: #7E4999;
+    }
+    /* Make the active tab white with purple text and sharp edged */
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+        color: #7E4999;
+        background-color: #fff;
+        /* border: 1px solid #ddd; */
+        border-bottom-color: transparent;
+    }
+    /* Make the hovered tab background slightly different */
+    .nav-tabs > li > a:hover {
+        background-color: #ddd;
+        color: #7E4999
+    }
+    /* Make the tabs square and white */
+    .nav-tabs > li > a {
+        margin-right: 0;
+        border-radius: 0 0 0 0;
+        color: #fff;
+        /* border: 1px solid transparent; */
+    }
+</style>
+</body>
 </html>
