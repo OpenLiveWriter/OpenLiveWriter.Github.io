@@ -1,3 +1,9 @@
-<div style="text-align: right">
-    <p>Copyright &copy; {{ site.time | date: "%Y" }} <a href="http://dotnetfoundation.org">.NET Foundation</a>.</p>
+<div id="footer_wrap" class="outer">
+    <footer id="footer" class="inner">
+        <div style="text-align: right">
+            <p>Copyright &copy; {{ site.time | date: "%Y" }} <a href="http://dotnetfoundation.org">.NET Foundation</a>.</p>
+        </div>
+        <!-- DOWNLOAD SOURCE IN THE FOOTER -->
+        {% include download_source.html %}
+    </footer>
 </div>

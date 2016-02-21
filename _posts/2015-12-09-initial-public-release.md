@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Initial public release'
 version: 0.5.0.0
 categories: [news, release]

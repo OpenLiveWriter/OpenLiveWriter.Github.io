@@ -1,5 +1,5 @@
 ---  
-layout: default  
+layout: post  
 title: 'How to contribute by testing'  
 categories: [blog]  
 date: 2016-02-11 00:00:00 -0800  
