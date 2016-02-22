@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Contributing to Open Live Writer'
 categories: [blog]
 date: 2016-01-16 00:00:00 -0800

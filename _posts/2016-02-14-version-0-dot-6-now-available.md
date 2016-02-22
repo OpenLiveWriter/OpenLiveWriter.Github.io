@@ -1,12 +1,11 @@
 ---
-layout: default
-title: "Version 0.6 Now Available"
+layout: post
+title: "Open Live Writer Version 0.6 Is Now Available"
 date: 2016-02-14 05:22:23 +0530
 categories: [news, release]
 author: hashhar
 download: true
 ---
-# Open Live Writer v0.6.0.0 is now available!
 
 After about two months since the initial public release the team and community have managed to add features, fix issues and fulfill the demand for some of the more requested features like spell checking (it will only work on Windows 8 and later though) and support for Blogger categories. We hope you enjoy the new features as much as we enjoyed working on them. Read on to learn more about what issues have been fixed and what features have been added.
 

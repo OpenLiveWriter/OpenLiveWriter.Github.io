@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Blogger V3 API Support'
 version: 0.5.1.2
 categories: [news, release]

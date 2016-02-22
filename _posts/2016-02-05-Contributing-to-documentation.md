@@ -1,5 +1,5 @@
 ---  
-layout: default  
+layout: post  
 title: 'Contributing to Documentation'  
 categories: [blog]  
 date: 2016-02-05 00:00:00 -0800  
