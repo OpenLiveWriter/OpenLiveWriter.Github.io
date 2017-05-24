@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Fix Unrecognized Installer Warning"
+download: false
+---
+
+<p>Our previous code signing certificate expired, and our new certificate is not yet recognized by Windows Defender SmartScreen. 
+SmartScreen is reputation based, so once we have enough successful installations, SmartScreen will automatically recognize
+Open Live Writer. Until then, however, you may get a warning when you download and run the installer.</p>
+
+<p>This tutorial shows you how to complete the installation until SmartScreen begins to recognize us.</p>
+
+<p>Note that this application is also available on Windows 10 via the Windows Store. The latest update has been submitted
+to the store and is currently in the certification process.</p>
+
+<p>You can read more about SmartScreen in the following locations:</p>
+
+<ul>
+<li>
+<a href="https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview">Windows Defender SmartScreen</a>
+overview on docs.microsoft.com.
+</li><li>
+<a href="https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx">Windows Defender SmartScreen Frequently Asked Questions</a>
+(see questions "How should I decide whether to run a program flagged by Windows Defender SmartScreen as ‘not commonly downloaded’?" and
+"How can I download files reported as unsafe by Windows Defender SmartScreen in Internet Explorer 10?").
+</li><li>
+<a href="https://blogs.msdn.microsoft.com/ie/2011/05/17/smartscreen-application-reputation-in-ie9/">SmartScreen® Application Reputation in IE9</a>
+from the Internet Explorer Team Blog post announcing SmartScreen back in 2011.
+</ul>
+
+<p><i>Note: One possibility to immediately gain reputataion is to use and EV (Extended Validation) code signing certificate.
+In the case of Open Live Writer, we've recently done some work to code sign every software build, including nightly releases.
+EV Certificates won't work with our code signing infrastructure. Since this is a temporary issue for the new certificate, 
+and we really want to have automated signed builds (for speedy future releases, signed nightly releases for beta testers, etc.)
+we've decided to not to go with an EV cert for now.</i></p>
+
+<h3>Steps for installing Open Live Writer if you receive SmartScreen warnings</h3>
+<ol>
+<li>
+If you download via Edge or Internet Explorer, you may receive a warning indicating that the installer is not commonly downloaded
+as shown below. If so, you can still view the download by clicking "View Downloads" or run it by clicking "Run". You may choose to
+download the application and view the digital signature. You can do that by right clicking, selecting Properties and selecting the
+Digital Signatures tab.
+  <br/>
+<img src="images/not-commonly-downloaded.png" />
+</li><li>
+When you run the installer, you may see a prompt that only has a "Don't Run" button. Click on the "More info" link below the warning text.
+<br/>
+<img src="images/windows-protected-your-pc.png" />
+</li><li>
+Verify that the Publisher information shown in the "More info" text shows that the application is signed by the .NET Foundation 
+as shown below, then click the "Run anyway" button.<br/>
+<img src="images/verify-and-run.png" />
+</li>
+</ol>
