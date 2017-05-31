@@ -13,9 +13,6 @@ The next time you start Open Live Writer and are connected to the internet, it s
 
 ## Release Notes
 
-> Note: Our previous code signing certificate has expired, so this release is signed by a new code signing certificate. Because of this, you may receive warnings from Windows Defender SmartScreen when you run
-the installer, indicating that the program is not commonly downloaded and may be unsafe. For more information, see [this help page](http://openlivewriter.org/tutorials/unrecognizedApp.html).
-
 This is primarily a maintenance release to handle issues with publishing images due to Google Blogger. They'd made some changes to how images are uploaded to Google Photos that prevent Open Live Writer from automatically configuring photo publishing. We've added some extra steps to try to configure it, and if we can't set it up for you automatically we link to a help page that shows you how to set it up.
 
 We also added in a few smaller bug fixes and improvements listed below, mostly submitted by the community. Thanks!!!
@@ -46,3 +43,6 @@ Special thanks to our contributors for this release:
 #450 Fix scaling of categories dropdown and options dialog
 #585 Implement per-monitor DPI Support
 #180 Add support to CSS3 templates
+
+> Note: Our previous code signing certificate has expired, so this release is signed by a new code signing certificate. Because of this, you may receive warnings from Windows Defender SmartScreen when you run
+the installer, indicating that the program is not commonly downloaded and may be unsafe. For more information, see [this help page](http://openlivewriter.org/tutorials/unrecognizedApp.html).
