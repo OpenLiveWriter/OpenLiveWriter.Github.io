@@ -24,9 +24,15 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         restore-keys: |
           ${{ runner.os }}-gems-
-
-    - name: Build Jekyll site.
-      uses: fabacab/jekyll-builder-for-github-pages-action@v1 
+    
+    - name: Make build destination directory
+      run: mkdir -vp ~/www/output
+        
+    - name: Jekyll Build
+      uses: gha-utilities/jekyll-build@v0.0.4
+      with:
+        source: ./
+        destination: ~/www/output
 
     - name: Build And Deploy
       id: builddeploy
@@ -37,7 +43,7 @@ jobs:
         action: 'upload'
         ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
         # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig 
-        app_location: '/_site/' # App source code path
+        app_location: '~/www/output' # App source code path
         api_location: '' # Api source code path - optional
         app_artifact_location: '' # Built app content directory - optional
         ###### End of Repository/Build Configurations ######
