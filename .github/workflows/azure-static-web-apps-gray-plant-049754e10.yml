@@ -25,8 +25,8 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    # Standard usage
-    - uses:  lemonarc/jekyll-action@1.0.0
+    - name: Build Jekyll site.
+      uses: fabacab/jekyll-builder-for-github-pages-action@v1 
 
     - name: Build And Deploy
       id: builddeploy
