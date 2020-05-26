@@ -35,6 +35,7 @@ jobs:
         destination: ./_site
 
     - name: Build And Deploy
+      if: github.event.pull_request.head.repo.fork != true
       id: builddeploy
       uses: Azure/static-web-apps-deploy@v0.0.1-preview
       with:
@@ -49,7 +50,7 @@ jobs:
         ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.head.repo.fork != true
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
