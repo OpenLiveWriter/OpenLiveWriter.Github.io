@@ -9,4 +9,4 @@ download: true
 ---
 This release provides the initial version of Blogger support using their latest API to unblock users of Blogger.
 
-To force an update, visit [http://openlivewriter.org](http://openlivewriter.org) then download and run the installer. Otherwise if you start Open Live Writer and wait a minute or so, next time you restart Live Writer you should be running the latest version (go to Help, About Open Live Writer to see what version you are on)
+To force an update, visit [http://openlivewriter.com](http://openlivewriter.com) then download and run the installer. Otherwise if you start Open Live Writer and wait a minute or so, next time you restart Live Writer you should be running the latest version (go to Help, About Open Live Writer to see what version you are on)

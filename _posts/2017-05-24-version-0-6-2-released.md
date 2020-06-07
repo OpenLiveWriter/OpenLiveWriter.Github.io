@@ -45,4 +45,4 @@ Special thanks to our contributors for this release:
 #180 Add support to CSS3 templates
 
 > Note: Our previous code signing certificate has expired, so this release is signed by a new code signing certificate. Because of this, you may receive warnings from Windows Defender SmartScreen when you run
-the installer, indicating that the program is not commonly downloaded and may be unsafe. For more information, see [this help page](http://openlivewriter.org/tutorials/unrecognizedApp.html).
+the installer, indicating that the program is not commonly downloaded and may be unsafe. For more information, see [this help page](http://openlivewriter.com/tutorials/unrecognizedApp.html).
