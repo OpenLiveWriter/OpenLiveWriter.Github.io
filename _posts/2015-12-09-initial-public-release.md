@@ -11,7 +11,7 @@ First open source release of Open Live Writer!
 
 ### Installation
 
-Install from http://www.OpenLiveWriter.org
+Install from http://www.OpenLiveWriter.com
 
 You can install the latest version of Open Live Writer alongside an older version of Windows Live Writer.
 
@@ -22,4 +22,4 @@ look at the roadmap to see what the current plans are.
 
 For the latest news and updates about Open Live Writer, you can follow us on Twitter 
 (@OpenLiveWriter), by keeping an eye on the website
-http://www.OpenLiveWriter.org or by watching this repo and subscribing to notifications.
+http://www.OpenLiveWriter.com or by watching this repo and subscribing to notifications.

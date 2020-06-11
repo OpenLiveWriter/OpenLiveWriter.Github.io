@@ -10,7 +10,7 @@ I've expanded my contribution.  I've been posting blog posts to the website. I'v
 created a tutorial and I will be doing more as we all get more comfortable with the process.  
 I would also like some help.  
   
-The Open Live Writer website is at http://www.openlivewriter.org and is maintained and   
+The Open Live Writer website is at http://www.openlivewriter.com and is maintained and   
 hosted with Github and Jekyll.  
 
 Jekyll is pretty easy to use once you get the hang of it.  I started out by creating  
