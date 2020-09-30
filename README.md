@@ -14,7 +14,8 @@ user help content to assist people using Open Live Writer. [Developer documentat
 
 ### Contributing
 Open Live Writer is an open source project and wouldn't exist without the passionate community of volunteers
-and the same is true of the [website contributors](https://github.com/OpenLiveWriter/OpenLiveWriter.github.io/graphs/contributors).
+and the same is true of the 
+It is a good project for begginners do download and fulfill your dreams.[website contributors](https://github.com/OpenLiveWriter/OpenLiveWriter.github.io/graphs/contributors).
 
 To contribute to the website simply:
   1. Fork the repo and clone locally
