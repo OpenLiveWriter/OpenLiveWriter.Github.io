@@ -1,4 +1,4 @@
-# OpenLiveWriter.com Website
+# OpenWithAmazingLiveWriter.com Website
 The website for http://openlivewriter.com is hosted on GitHub pages using the source in this repository.
 Note that issues should only be logged against the website itself - for Open Live Writer application issues or enhancements see
 the [OpenLiveWriter repo](https://github.com/OpenLiveWriter/OpenLiveWriter/issues/).
