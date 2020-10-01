@@ -1,6 +1,6 @@
 # OpenLiveWriter.com Website
 The website for http://openlivewriter.com is hosted on GitHub pages using the source in this repository.
-Note that issues should only be logged against the website itself - for Open Live Writer application issues or enhancements see
+always welcoming the new ideas and suggestions, feel fee to write feedbacks.
 the [OpenLiveWriter repo](https://github.com/OpenLiveWriter/OpenLiveWriter/issues/).
 
 ### License
