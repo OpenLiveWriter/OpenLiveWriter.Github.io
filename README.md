@@ -1,4 +1,4 @@
-# OpenLiveWriter.com Website
+# OpenLiveWriter.com Website / a brilliant website for the writers
 The website for http://openlivewriter.com is hosted on GitHub pages using the source in this repository.
 Note that issues should only be logged against the website itself - for Open Live Writer application issues or enhancements see
 the [OpenLiveWriter repo](https://github.com/OpenLiveWriter/OpenLiveWriter/issues/).
@@ -48,7 +48,9 @@ download: true
 Do not change the `layout`.  
 `title`: The text that you want to see on the page.  
 `version`: The version number of OLW about which the post is concerned.  
-`categories`: Comma separated categories within braces. If this contains `blog` it goes to `/blog`, if it contains `news` it goes to `/news`. If both, then it will be present in both places.  
+`categories`: Comma separated categories within braces. If this contains `blog` it goes to `/blog`, if it contains `news` it goes to `/news`. If both, then it will be present in both places. 
+# the above line tells you about the working of this amazing website
+
 `date`: yyyy-mm-dd hh:mm:ss timezone (timezone is of the form +0530 or -0800, ie. +/-hhmm).  
 `author` is the GitHub username of the author. Used to link to their profile and show a small gravatar.  
 `download`: I'm not sure what this does but let it be.
