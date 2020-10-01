@@ -12,7 +12,7 @@ You can find the roadmap for the Open Live Writer product [here](https://github.
 For the website, we are initially focussed on getting a fast, lightweight product homepage set up. Then we want to increase the end
 user help content to assist people using Open Live Writer. [Developer documentation should live alongside the code](https://github.com/OpenLiveWriter/OpenLiveWriter/).
 
-### Contributing
+### The Amazing Contributing
 Open Live Writer is an open source project and wouldn't exist without the passionate community of volunteers
 and the same is true of the [website contributors](https://github.com/OpenLiveWriter/OpenLiveWriter.github.io/graphs/contributors).
 
