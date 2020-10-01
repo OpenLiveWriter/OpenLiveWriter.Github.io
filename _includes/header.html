@@ -1,4 +1,17 @@
 <body>
+    <style>
+    .txt h1
+        {
+            text-align: center;
+            font-size: 27px;
+            font-family:'Lucida Grande', 'Calibri',;
+                color:white;
+        }
+        .type 
+        {
+            color: #00b7ea;
+        }
+    </style>
 <div class="main-container">
     {% include google_analytics.html %}
     <!-- OLW banner and GitHub badge -->
@@ -9,6 +22,23 @@
             {% if page.subtitle %}
             <h2 id="project_tagline">{{ page.subtitle }}</h2>
             {% endif %}
+            <div class="txt">
+                <h1>Write and Post your Blog into :<span class="type"></span></h1>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+            <script>
+                var typed2 = new Typed('.type', {
+    strings: ['Wordpress',
+              'Blogger',
+              'SharePoint',
+               'Typed and more'],
+    typeSpeed: 100,
+    backSpeed: 200,
+    fadeOut: true,
+    loop: true
+  });
+    
+            </script>
         </header>
     </div>
     <!-- Tabbed navigation bar -->

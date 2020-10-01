@@ -291,7 +291,17 @@ Full-Width Styles
 #header_wrap .inner {
   padding: 20px 0px 0px 0px;
 }
-
+.txt h1
+        {
+            text-align: center;
+            font-size: 25px;
+            font-family:'Lucida Grande', 'Calibri',;
+                color:white;
+        }
+        .type 
+        {
+            color: #00b7ea;
+        }
 #project_title {
   margin: 0;
   color: #fff;
