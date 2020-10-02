@@ -1,6 +1,8 @@
-# OpenLiveWriter.com Website
+# An Amazing Website
+# OpenLiveWriter.com 
+# _______________________
 The website for http://openlivewriter.com is hosted on GitHub pages using the source in this repository.
-Note that issues should only be logged against the website itself - for Open Live Writer application issues or enhancements see
+# Note that issues should only be logged against the website itself - For open live writer application issues or enhancements see
 the [OpenLiveWriter repo](https://github.com/OpenLiveWriter/OpenLiveWriter/issues/).
 
 ### License
@@ -16,7 +18,7 @@ user help content to assist people using Open Live Writer. [Developer documentat
 Open Live Writer is an open source project and wouldn't exist without the passionate community of volunteers
 and the same is true of the [website contributors](https://github.com/OpenLiveWriter/OpenLiveWriter.github.io/graphs/contributors).
 
-To contribute to the website simply:
+# To contribute to the website simply:-
   1. Fork the repo and clone locally
   2. Create a specific topic branch, add a nice feature or fix your bug
   3. Send a Pull Request to spread the fun!
